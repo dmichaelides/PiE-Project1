@@ -5,9 +5,6 @@ This is the first project in the 'Python is Easy' course from Pirple..
 
 The assignment is to create the popular two player game called Connect 4, using Python code.
 
-As I write this description there is no code, and am overwhlemed on how to even approach this dang thing.  But hey, this is where we make ourselves better.
-
-So here goes!
 
 Will start by first manually drawing out the board.
 
@@ -281,7 +278,7 @@ def checkwin():
 
 while(True):
 	print("=========================\n\nPlayers Turn:", "Player",Player)
-	playermove = input("Select column:\n")
+	playermove = input("Select column: ")
 	if GameStatus[int(playermove)-1][0] != "_":
 		print("=========================\n\nCareful! Column",playermove,"is full.\nChoose a column with at least one empty space!")
 		continue
