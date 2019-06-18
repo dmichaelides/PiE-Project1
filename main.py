@@ -280,7 +280,9 @@ while(True):
 	print("=========================\n\nPlayers Turn:", "Player",Player)
 	playermove = input("Select column: ")
 	if GameStatus[int(playermove)-1][0] != "_":
-		print("=========================\n\nCareful! Column",playermove,"is full.\nChoose a column with at least one empty space!")
+		print("=========================\n\nCareful! Column",playermove,"is full.\n")
+		drawGamepPlay(GameStatus)
+		print("\nChoose a column with at least one empty space!")
 		continue
 	colslot = -1
 	if Player == 1:
